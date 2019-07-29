@@ -8,7 +8,10 @@ import {
 const footerStyle = {
 backgroundColor: 'black',
 color: 'white',
-height: '100px'
+minHeight: '50px',
+left:'0',
+bottom:'0',
+right:'0'
 }
 const containerStyle = {
     padding: '20px',
