@@ -3,6 +3,8 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Dot } from 'pu
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Footer from '../../Components/Footer'
 import Image from 'react-bootstrap/Image'
+import GridContainer from "../../Components/Grid/GridContainer.jsx";
+import GridItem from "../../Components/Grid/GridItem.jsx";
 import '../../Stylesheets/containers.css'
 import VerticalVideos from '../../Components/VerticalVideos'
 import {
@@ -37,6 +39,27 @@ export default class Jackets extends Component {
         return (
             <>
             <div className="dark_gray">
+            <GridContainer>
+              <GridItem xs={12} sm={6} md={6}>
+                <h1 className={classes.title}>Your Story Starts With Us.</h1>
+                <h4>
+                  Every landing page needs a small description after the big
+                  bold title, that{"'"}s why we added this text here. Add here
+                  all the information that can make you or your product create
+                  the first impression.
+                </h4>
+                <br />
+                <Button
+                  color="danger"
+                  size="lg"
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                  target="_blank"
+                >
+                  <i className="fas fa-play" />
+                  Watch video
+                </Button>
+              </GridItem>
+            </GridContainer>
             <Container>
             <Row>
             
@@ -46,9 +69,6 @@ export default class Jackets extends Component {
             </div>
             </Row>
             <Row>
-           
-            
-            
             </Row>
                 <CarouselProvider
                 naturalSlideWidth={100}
