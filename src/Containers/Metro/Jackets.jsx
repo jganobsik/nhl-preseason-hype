@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+import Footer from '../../Components/Footer'
 import {
     Container,
     Row,
@@ -16,11 +16,14 @@ const slide1 = {
     backgroundColor: '#022B59',
     height: '500px'
 }
-const carouselStyle={
+const carouselStyle = {
 padding: '20px',
 height: '800px'
 }
 
+const menuStyle = {
+textAlign: 'center'
+}
 
 export default class Jackets extends Component {
     render() {
@@ -44,12 +47,12 @@ export default class Jackets extends Component {
                   <Slide index={1}>I am the second Slide.</Slide>
                   <Slide index={2}>I am the third Slide.</Slide>
                   </Slider>
-                  <DotGroup />
+                  <DotGroup style={menuStyle} />
               </CarouselProvider>
               </Container>
               </div>
-              <div style={cbjStyling} >
-                
+              <div>
+            <Footer />
               </div>
               </>
         );
