@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar color="dark" light expand="md">
-          <NavbarBrand style={navStyle} href="/">NHL Preseason Overview</NavbarBrand>
+          <NavbarBrand style={navStyle} href="/">NHL Teams</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -49,7 +49,6 @@ export default class NavBar extends React.Component {
                   <DropdownItem>
                     Option 2
                   </DropdownItem>
-                  
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

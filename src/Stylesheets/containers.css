@@ -1,12 +1,32 @@
 .whiteHeader {
-    color: white
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
 }
-.menuStyle {
+.centeredMenu {
     text-align: center
 }
 
 .hover {
-box-shadow: 2px
-
+box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+padding: 10px;
+height: 600px;
+border-radius: 5px;
+}
+.blue {
+    background-color: blue;
 }
 
+.dark_gray {
+    background-color: #525252;
+}
+.greyed {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+    background-color: #000;
+}
+
+.wrapper {
+    height: 120px;
+    width: 120px;
+}
