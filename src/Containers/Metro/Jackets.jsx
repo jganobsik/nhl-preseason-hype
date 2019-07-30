@@ -14,6 +14,7 @@ import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
 } from 'reactstrap'
+import LazyHero from 'react-lazy-hero';
 
 
 const slide1 = {
@@ -39,14 +40,12 @@ export default class Jackets extends Component {
         return (
             <>
             <div className="dark_gray">
+            <LazyHero imageSrc="https://unsplash.it/2000/1000">
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
+                <h1 className="">March With Us</h1>
                 <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that{"'"}s why we added this text here. Add here
-                  all the information that can make you or your product create
-                  the first impression.
+               After defeating the Tampa Bay Lightning to move past the first round of the Stanley Cup Playoffs for the first time in franchise history, the Jackets look to build off last year's success with their young core and a host of new faces in the locker room for the 2019-20 season.
                 </h4>
                 <br />
                 <Button
@@ -56,10 +55,11 @@ export default class Jackets extends Component {
                   target="_blank"
                 >
                   <i className="fas fa-play" />
-                  Watch video
+                  2018-2019 Highlights
                 </Button>
               </GridItem>
             </GridContainer>
+            </LazyHero>
             <Container>
             <Row>
             
